@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Fylo data storage component</title>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+  <div class="fixed">
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Arihant721">Arihant721</a>.
+  </div>
+  </div>
+  <main class="main">    
+    <div class="link-panel">
+      <a class="brand" href="#" >
+        <img src="images/logo.svg">
+      </a>
+      <div class="link-box">
+        <button>
+          <img src="images/icon-document.svg">
+        </button>
+        <button>
+          <img src="images/icon-folder.svg">
+        </button>
+        <button>
+          <img src="images/icon-upload.svg">
+        </button>
+      </div>
+    </div>
+    <div class="nav-panel">
+      <p style="margin-top: 0;position: relative;">You’ve used <b>815 GB</b> of your storage
+        <span id="tooltip_dp">
+          <b style="font-size: 40px;color: hsl(229, 57%, 11%)"> 185 </b>GB LEFT 
+        </span>
+      </p>
+      <div class="progress">
+        <div class="progress-bar">
+          <span style="display: inline-block;width: 13px;height: 100%;background-color: white;border-radius: inherit"></span>
+        </div>        
+      </div>
+      <div class="scale" style="margin:2% 0;">
+        <b style="float: left;">0 GB</b> <b style="float: right;"> 1000 GB</b>
+        <span id="tooltip_mob">
+          <b style="font-size: 40px;color: hsl(229, 57%, 11%)"> 185 </b>GB LEFT 
+        </span>
+      </div>      
+    </div>
+  </main>
+  <script type="text/javascript">
+    var r = document.querySelector(".progress-bar");
+    r.style.transitionDelay += "0.1s";
+    r.style.width += "81.5%";
+  </script>
+</body>
+</html>
