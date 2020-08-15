@@ -1,0 +1,213 @@
+:root{
+	--Lime-Green: hsl(163, 72%, 41%);
+	--Bright-Red: hsl(356, 69%, 56%);
+	--Facebook: hsl(208, 92%, 53%);
+	--Twitter: hsl(203, 89%, 53%);
+	--YouTube: hsl(348, 97%, 39%);
+}
+html.dark{
+	--BG: hsl(230, 17%, 14%);
+	--Top-BG-Pattern: hsl(232, 19%, 15%);
+	--Card-BG: hsl(228, 28%, 20%);
+	--cText: hsl(228, 34%, 66%);
+	--hText: hsl(0, 0%, 100%);
+}
+html{
+	--BG: hsl(0, 0%, 100%);
+	--Top-BG-Pattern: hsl(225, 100%, 98%);
+	--Card-BG: hsl(228, 47%, 96%);
+	--cText: hsl(228, 12%, 44%);
+	--hText: hsl(230, 17%, 14%);
+}
+*{
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	transition: color 2s, background-color 2s;
+	color:var(--cText);
+}
+img{vertical-align: middle;}
+#header{
+	padding: 2% 8% 0% 8%;
+}
+#header h1{
+	margin: 0;
+}
+#header hr{
+	display: none;
+}
+#heading{
+	display: inline-block;
+}
+
+#TopPattern{
+	position: fixed;
+	z-index: -1;
+	width: 100%;
+	height: 230px;
+	background-color: var(--Top-BG-Pattern);
+	border-radius: 10px;
+}
+#Dashboard,#StatsPanel{
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	justify-content: center;
+	align-items: center;
+}
+h1{color: var(--hText);}
+main>h1{padding-left: 1%;}
+#Dashboard>article{
+	border-radius: 5px;
+    background-color: var(--Card-BG);
+    padding: 8%;
+    text-align: center;
+    border-top: solid 5px;
+    margin:4%;
+}
+#Dashboard h2{
+	font-size:3.5em;
+	color: var(--hText);
+	margin: 0;
+}
+
+#Dashboard .handle{
+	font-size: 0.7em;
+}
+.status{ 
+    font-size: 0.75em;
+    align-items: baseline;
+}
+.growth{
+	color: var(--Lime-Green); 
+}
+.fall{
+	color: var(--Bright-Red);
+}
+#Dashboard div>span{
+	font-size: 0.8em;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+#StatsPanel>article{
+	border-radius: 5px;
+    background-color: var(--Card-BG);
+    padding: 8%;
+    margin: 4%;
+    text-align: center;
+    position: relative;
+}
+#StatsPanel .handle, #StatsPanel .status{
+	height: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+#StatsPanel .handle{
+	margin-bottom: 30px;
+	white-space: nowrap;
+}
+#StatsPanel .handle>div, #StatsPanel .status>div{
+	width: 50%;
+}
+
+#StatsPanel div:nth-child(1){
+	text-align: left;
+}
+#StatsPanel div:nth-child(2){
+	text-align: right;
+}
+#toggler{
+	 display: flex;align-items: center;
+}
+#toggler>div{
+	display: inline-block;
+}
+#toggler button{
+	width: 50px;
+	height: 25px;
+	border-radius: 13px;
+	border:solid 0px;
+	background-color: hsl(230, 22%, 74%);
+	position: relative;
+	padding: 5%;
+}
+#toggler button:focus{
+	outline: none;
+}
+#toggler button>span{
+	display: inline-block;
+    width: 21px;
+    height: 100%;
+    background: white;
+    border-radius: 50%;
+    transform: translate(-50%,0%);
+    transition: transform 0.5s;
+}
+
+#toggler button.dark{
+	background:linear-gradient(to right,hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+}
+#toggler button.dark>span{
+	transform: translate(50%,0);
+}
+
+#attribution {text-align: center;font-size: 1.1em;padding: 0 8% 2% 8%; }
+#attribution a { color: hsl(228, 45%, 44%); }
+
+@media(max-width: 575px){
+	#Dashboard,#StatsPanel{
+		grid-template-columns: 100%;
+	}
+	main{
+	 	padding:2% 3%;
+	}
+	main>h1{
+		padding-left: 4%;
+	}
+	#header{
+		padding-top: 6%;
+		padding-bottom: 6%;
+	}
+	#heading {
+	    margin-bottom: 5%;
+	}
+	#header hr{
+		display: block;
+	}
+	#toggler>div{
+		width: 50%;
+	}
+	#StatsPanel .status{
+		font-size: 0.85em;
+	}
+	#header h1{
+		font-size: x-large;
+		margin-bottom: 5px;
+	}
+}
+@media(min-width: 576px) and (max-width: 991px){
+	#Dashboard,#StatsPanel{
+		grid-template-columns: 50% 50%;
+	}
+	#header{
+		padding-top: 4%;
+	}
+	main{
+	 	padding:3% 5%;
+	}
+	main>h1{
+		padding-left: 2%;
+	}
+	#toggler{
+		float: right;
+	}
+}
+@media(min-width: 992px){
+	 main{
+	 	padding:2% 7%;
+	 }
+	 #toggler{
+	 	float: right;
+	 }
+	 
+}

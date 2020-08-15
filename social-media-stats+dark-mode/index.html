@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+</head>
+<body style="background-color: var(--BG);margin:0%;">
+	<div id="TopPattern"></div>
+	<header id ="header">
+		<div id = "heading">
+			<h1>Social Media Dashboard</h1>
+			<b>Total Followers: 23,004</b>
+		</div>
+		<hr>
+		<nav id="toggler">
+			<div>Dark Mode&nbsp;&nbsp;</div>  
+			<div style="text-align: right;">
+				<button onclick="darkMode();">
+					<span></span>
+				</button>
+			</div>			
+		</nav>
+	</header>
+	<main>
+		<section id="Dashboard" style="clear: both;">
+			<article style="border-color: var(--Facebook)">
+				<div class="handle">
+					<img src="./images/icon-facebook.svg">
+					@nathanf
+				</div>
+				<div style="margin:7%; ">
+					<h2>1987</h2>
+					<span>FOLLOWERS</span>
+				</div>				
+				<div class="status growth">
+					<img src="./images/icon-up.svg">
+					12 Today
+				</div> 
+			</article>
+			<article style="border-color: var(--Twitter)">
+				<div class="handle">
+					<img src="./images/icon-twitter.svg">
+					@nathanf
+				</div>
+				<div style="margin:7%">
+					<h2>1044</h2>
+					<span>FOLLOWERS</span>
+				</div>
+				<div class="status growth">
+					<img src="./images/icon-up.svg">
+					99 Today
+				</div>
+			</article>
+			<article style="border: none;position: relative;">
+				<div style="top: 0;position: absolute;left: 0;width:100%;border-radius: 5px 5px 0 0;height: 5px;background: linear-gradient(to right, hsl(37, 97%, 70%),hsl(329, 72%, 58%));"></div>
+				<div class="handle">
+					<img src="./images/icon-instagram.svg">
+					@realnathanf
+				</div>
+				<div style="margin:7%">
+					<h2>11k</h2>
+					<span>FOLLOWERS</span>
+				</div>
+				<div class="status growth">
+					<img src="./images/icon-up.svg">
+					1099 Today
+				</div>
+			</article>
+			<article style="border-color: var(--YouTube)">
+				<div class="handle">
+					<img src="./images/icon-youtube.svg">
+					Nathan F.
+				</div>
+				<div style="margin:7%">
+					<h2>8239</h2>
+					<span>SUBSCRIBERS</span>
+				</div>
+				<div class="status fall">
+					<img src="./images/icon-down.svg">
+					144 Today
+			</article>
+		</section>
+		<h1 style="margin-top: 3%;"> Overview - Today</h1>
+		<section id="StatsPanel">
+			<article>
+				<div class="handle">
+					<div>Page Views</div>
+					<div><img src="./images/icon-facebook.svg"></div>
+				</div>
+				<div class="status">
+					<div style="font-size: 3em;margin: 0;color: var(--hText)">87</div>
+					<div class="growth"><img src="./images/icon-up.svg"> 3%</div>
+				</div>
+			</article>
+			<article>
+				<div class="handle">
+					<div>Likes</div>
+					<div><img src="./images/icon-facebook.svg"></div>
+				</div>
+				<div class="status">
+					<div style="font-size: 3em;margin: 0;color: var(--hText)">52</div>
+					<div class="fall"><img src="./images/icon-down.svg"> 2%</div>
+				</div>		
+			</article>
+			<article>
+				<div class="handle">
+					<div>Likes</div>
+					<div><img src="./images/icon-instagram.svg"></div>
+				</div>
+				<div class="status">
+					<div style="font-size: 3em;margin: 0;color: var(--hText)">5462</div>
+					<div class="growth"><img src="./images/icon-up.svg"> 2257%</div>
+				</div>
+			</article>
+			<article>
+				<div class="handle">
+					<div>Profile Views</div>
+					<div><img src="./images/icon-instagram.svg"></div>
+				</div>
+				<div class="status growth">
+					<div style="font-size: 3em;margin: 0;color: var(--hText)">52k</div>
+					<div class="growth"><img src="./images/icon-up.svg"> 1375%</div>
+				</div>	
+			</article>			
+			<article>
+				<div class="handle">
+					<div>Retweets</div>
+					<div><img src="./images/icon-twitter.svg"></div>
+				</div>
+				<div class="status">
+					<div style="font-size: 3em;margin: 0;color: var(--hText)">117</div>
+					<div class="growth"><img src="./images/icon-up.svg"> 303%</div>
+				</div>			
+			</article>			
+			<article>
+				<div class="handle">
+					<div>Likes</div>
+					<div><img src="./images/icon-twitter.svg"></div>
+				</div>
+				<div class="status">
+					<div style="font-size: 3em;margin: 0;color: var(--hText)">507</div>
+					<div class="growth"><img src="./images/icon-up.svg"> 553%</div>
+				</div>			
+			</article>			
+			<article>
+				<div class="handle">
+					<div>Likes</div>
+					<div><img src="./images/icon-youtube.svg"></div>
+				</div>
+				<div class="status">
+					<div style="font-size: 3em;margin: 0;color: var(--hText)">107</div>
+					<div class="fall"><img src="./images/icon-down.svg"> 19%</div>
+				</div>
+			</article>			
+			<article> 
+				<div class="handle">
+					<div>Total Views</div>
+					<div><img src="./images/icon-youtube.svg"></div>
+				</div>
+				<div class="status">
+					<div style="font-size: 3em;margin: 0;color: var(--hText)">1407</div>
+					<div class="fall"><img src="./images/icon-down.svg"> 12%</div>
+				</div>	
+			</article>			
+		</section>
+	</main>	
+	<footer id="attribution">
+	Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+	Coded by <a href="#">Arihant721</a>.
+	</footer>
+	<script>
+		function darkMode() {
+			document.querySelector("html").classList.toggle("dark");
+			document.getElementById("toggler").querySelector("button").classList.toggle("dark");
+		}	
+	</script>
+</body>
+</html>
