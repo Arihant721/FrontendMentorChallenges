@@ -129,14 +129,14 @@ main>h1{padding-left: 1%;}
 	border:solid 0px;
 	background-color: hsl(230, 22%, 74%);
 	position: relative;
-	padding: 5%;
+	padding: 3px;
 }
 #toggler button:focus{
 	outline: none;
 }
 #toggler button>span{
 	display: inline-block;
-    width: 21px;
+    width: 19px;
     height: 100%;
     background: white;
     border-radius: 50%;
