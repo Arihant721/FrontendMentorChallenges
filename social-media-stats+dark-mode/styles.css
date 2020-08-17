@@ -109,7 +109,10 @@ main>h1{padding-left: 1%;}
 #StatsPanel .handle>div, #StatsPanel .status>div{
 	width: 50%;
 }
-
+#StatsPanel .status h2{
+	font-size: 3em;margin: 0;color: var(--hText);
+	width: 50%;text-align: left;
+}
 #StatsPanel div:nth-child(1){
 	text-align: left;
 }
