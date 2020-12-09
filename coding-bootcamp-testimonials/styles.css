@@ -112,9 +112,9 @@ button:focus{outline: none;}
 	}
 	.quote{
 		display: flex;
-    width: 29%;
-    left: 2%;
-    font-size: 1.5em;
+    width: 33%;
+    left: 3%;
+    font-size: 1.75em;
 	}
 	.quote blockquote{
 		margin:0;
@@ -127,7 +127,11 @@ button:focus{outline: none;}
 	}
 	.img{
 		position: relative;
-    	padding: 5% 0px;
+    	padding: 11% 0px;
+    	width: 67%;
+	}
+	.img .q>img {
+	    right: 4%;
 	}
 }
 @media(min-width: 992px){
@@ -141,6 +145,14 @@ button:focus{outline: none;}
 		left: 2%; font-size: 2em;
 	}
 	.pagination{left: 15%;}
+	.img{
+		position: relative;
+    	padding: 5% 0px;
+    	width: auto;
+	}
+	.img .q>img {
+	    right: 8%;
+	}
 }
 @media (max-width: 767px){
 	#testimonial1,#testimonial2{
