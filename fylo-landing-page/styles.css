@@ -1,0 +1,227 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif,'Arial',sans-serif;
+	font-size: 20px;
+	line-height: 1.5;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Raleway', sans-serif,'Arial',sans-serif;
+}
+h1{
+	font-size: 1.9em;
+	margin: 0;
+}
+#Header,main>section{
+	margin: 0;padding: 65px;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	position: relative;
+	display: flex;
+	color:hsl(243, 87%, 12%);
+}
+#Header{
+	display: block;
+	position: relative;		
+	padding-bottom: 0;
+}
+#Header>nav{
+	display: inline-block;float: right;margin:1%;
+}
+#Footer
+{
+	background-color:hsl(243, 87%, 12%);
+}
+#Footer>section{
+	margin: 0;
+	align-content: center;
+	justify-content: center;
+	width: 100%;
+	position: relative;
+	display: flex;
+	background-color: hsl(243, 87%, 12%);
+	color: white;
+	padding: 65px;
+	align-items: normal;
+}
+article, section>img{
+	width: 50%;
+}
+form>*{
+    width: 100%;
+}
+#Footer>nav{
+	display: flex;
+	justify-content: space-between;
+	padding: 65px;
+	padding-top: 0;
+}
+#Footer>article{
+	margin: 0;
+    padding: 65px;
+    width: 100%;
+    padding-bottom: 0;
+}
+#Footer>*{
+	background-color: hsl(243, 87%, 12%);
+}
+#Footer>nav>ul{
+	list-style-type: none;
+	color: white;
+	margin-top: 0;
+}
+#Header a{
+	padding: 10px;
+	text-decoration: none;
+	border: solid 3px #fff0;
+	border-radius: 8px;
+	transition: border-color 0.25s;
+}
+#Header a:hover{
+	border-color:hsl(243, 87%, 12%);
+}
+#Header a:visited{
+	color: inherit;
+}
+
+.email,.submit{
+    padding: 10px 20px;
+    border-radius: 2px;
+    transition: box-shadow 0.5s;
+    outline: none;
+    width: 100%;
+    font-size: 0.75em;
+}
+.email{
+    border: solid 1px hsla(0, 0%, 59%,0.5);color:hsl(0, 0%, 59%);font-weight: 300;
+    padding-left: 20px;float: left;
+}
+.submit{
+    background-color: hsl(223, 81%, 50%);color: white;
+    border: solid 1px hsl(223, 100%, 88%);
+    font-weight: bold;
+}
+.submit:hover{
+    box-shadow: 0 0 5px 3px hsl(0, 0%, 75%);
+}
+.submit:focus{
+    background-color: hsl(223, 87%, 63%);
+}
+.error{
+    color:hsl(354, 100%, 66%);display:block;font-size: 0.6em;
+}
+.error.mob{
+	text-align: center;margin: 5%;font-size: 0.60em;
+}
+blockquote{
+	background: white;
+    box-shadow: 0 0 10px 0 hsl(0, 0%, 75%);
+    margin: 5% 0;
+    padding: 4%;
+    border-radius: 10px;
+    width: 60%;
+}
+.panel{
+	    display: flex;
+	width: 25%;
+}
+.panel a{
+	height: 40px;
+	width: 40px;
+	border: solid 1px white;
+	padding: 0; 
+	border-radius: 50%;     
+	background-color: none;
+	color: white;
+	transition: background-color 0.5s, color 0.5s;
+	margin: 1%;
+}
+.panel a>svg{
+	margin: 9px;
+}
+.panel a:hover{
+	color: white;
+	background-color: hsl(223, 87%, 63%);
+}
+
+@media (min-width: 766px) {
+	.error.mob{
+        display: none;
+    }
+    .submit{
+    	width: auto;
+    }
+    form[name = "Form1"]>.email{
+    	width: 70%;
+    }
+    form[name = "Form1"]>.submit{
+    	width: 24%;
+    }
+    form[name = "Form2"]{
+		width: 60%;padding: 0 5%;
+	}
+	#Footer>article{
+		width: 40%;
+	}
+	#Header>img{
+		width: 10em;
+    }
+}
+@media(min-width: 1200px){
+}
+@media (max-width:766px) {
+    #Header,#Footer,main>section{
+    	text-align: center;
+    	width: 100%;
+    	padding: 6%;
+    }
+    #Header{
+    	text-align: left;
+    }
+    #Header>img{
+    	width: 4.8em;
+    }
+    #Header a{
+    	font-size: 0.75em;
+    }
+    #Footer{
+    	padding: 0;
+    }
+   	main>section{
+    	flex-direction: column-reverse;
+    }
+    #Footer>section,#Footer>nav{
+    	flex-direction: column;
+    }
+    #Footer>nav,#Footer>article{
+    	text-align: left;
+    }
+    article, section>img{
+    	width: 100%;
+    }
+    .error.desk{
+        display: none;
+    }
+    .error.mob{
+        display: block;
+    }
+    blockquote{
+    	width: 86%;
+    	text-align: left;
+    	margin: 7%;
+    }
+    .panel{
+    	align-self: center;
+    	text-align: center;
+    }
+}
+@media (max-width:576px) {
+    h1{
+        font-size: 1.3em;
+    }
+}
