@@ -11,10 +11,7 @@ body{
 h1,h2,h3,h4,h5,h6{
 	font-family: 'Raleway', sans-serif,'Arial',sans-serif;
 }
-h1{
-	font-size: 1.9em;
-	margin: 0;
-}
+
 #Header,main>section{
 	margin: 0;padding: 65px;
 	align-content: center;
@@ -33,9 +30,10 @@ h1{
 #Header>nav{
 	display: inline-block;float: right;margin:1%;
 }
-#Footer
-{
-	background-color:hsl(243, 87%, 12%);
+#Footer,#Footer>*{
+    background-color: hsl(243, 87%, 12%);
+    line-height: 2.5;
+    font-size: 0.85em;
 }
 #Footer>section{
 	margin: 0;
@@ -55,25 +53,24 @@ article, section>img{
 form>*{
     width: 100%;
 }
+
 #Footer>nav{
 	display: flex;
 	justify-content: space-between;
 	padding: 65px;
-	padding-top: 0;
+	padding-top: 0!important;
 }
 #Footer>article{
 	margin: 0;
     padding: 65px;
     width: 100%;
-    padding-bottom: 0;
+    padding-bottom: 0!important;
 }
-#Footer>*{
-	background-color: hsl(243, 87%, 12%);
-}
+
 #Footer>nav>ul{
 	list-style-type: none;
 	color: white;
-	margin-top: 0;
+    padding: 0;
 }
 #Header a{
 	padding: 10px;
@@ -96,6 +93,7 @@ form>*{
     outline: none;
     width: 100%;
     font-size: 0.75em;
+    margin-top: 20px;
 }
 .email{
     border: solid 1px hsla(0, 0%, 59%,0.5);color:hsl(0, 0%, 59%);font-weight: 300;
@@ -116,7 +114,7 @@ form>*{
     color:hsl(354, 100%, 66%);display:block;font-size: 0.6em;
 }
 .error.mob{
-	text-align: center;margin: 5%;font-size: 0.60em;
+	text-align: center;
 }
 blockquote{
 	background: white;
@@ -127,8 +125,7 @@ blockquote{
     width: 60%;
 }
 .panel{
-	    display: flex;
-	width: 25%;
+	display: flex;
 }
 .panel a{
 	height: 40px;
@@ -138,15 +135,18 @@ blockquote{
 	border-radius: 50%;     
 	background-color: none;
 	color: white;
-	transition: background-color 0.5s, color 0.5s;
-	margin: 1%;
+	transition: border-color 0.5s, color 0.5s;
+	margin: 5px;
 }
 .panel a>svg{
 	margin: 9px;
 }
 .panel a:hover{
-	color: white;
-	background-color: hsl(223, 87%, 63%);
+	color: hsl(223, 87%, 63%);
+	border-color: hsl(223, 87%, 63%);
+}
+#Footer li{
+    margin: 8px 0;
 }
 
 @media (min-width: 766px) {
@@ -171,20 +171,25 @@ blockquote{
 	#Header>img{
 		width: 10em;
     }
+    .panel{
+        width: 25%;
+    }
+    h1,h2{
+        font-size: 1.9em;
+        margin: 0;
+    }
 }
 @media(min-width: 1200px){
 }
 @media (max-width:766px) {
-    #Header,#Footer,main>section{
+    #Header,main>section{
     	text-align: center;
     	width: 100%;
     	padding: 6%;
     }
-    #Header{
-    	text-align: left;
-    }
     #Header>img{
-    	width: 4.8em;
+        width: 5em;
+        vertical-align: -webkit-baseline-middle;
     }
     #Header a{
     	font-size: 0.75em;
@@ -192,13 +197,17 @@ blockquote{
     #Footer{
     	padding: 0;
     }
+    #Footer>section{
+        text-align: center;
+    }
    	main>section{
     	flex-direction: column-reverse;
     }
-    #Footer>section,#Footer>nav{
+    #Footer>section,#Footer>nav,#Footer>article{
     	flex-direction: column;
+        padding: 50px;
     }
-    #Footer>nav,#Footer>article{
+    #Header,#Footer>nav,#Footer>article{
     	text-align: left;
     }
     article, section>img{
@@ -219,9 +228,15 @@ blockquote{
     	align-self: center;
     	text-align: center;
     }
+    h1{
+        font-size: 1.9em;
+    }
+    h2{
+        font-size: 1.3em;
+    }
 }
 @media (max-width:576px) {
-    h1{
+    h1,h2{
         font-size: 1.3em;
     }
 }
