@@ -13,7 +13,7 @@
 </head>
 <body>
 	<header id = "Header">
-		<img src="./images/logo.svg">
+		<a href="index.html" id="logo"><img src="./images/logo.svg" alt="logo"></a>
 		<nav>
 			<a href="">Features</a>
 			<a href="">Team</a>
@@ -27,17 +27,17 @@
 				<p>Fylo stores your most important files in one secure location. 
 				Access them wherever you need, share and collaborate with friends, 
 				family, and co-workers.</p>
-				<form name="Form1" action="success.html" onsubmit="return validateForm('Form1');" method="post">
+				<form name="Form1" action="success.html" onsubmit="return validateForm('Form1');" method="post" aria-label = "none">
 					<input type="text" name="Email" class="email" value="Your email address ...">
 					<label for="Email" class = "error mob"></label>	
-					<input type="submit" name="Submit" class="submit" value="Get Started">
-					<label class = "error desk"></label>	
+					<input type="submit" name="Submit" class="submit" value="Get Started"  aria-label = "undefined">
+					<label class = "error desk"  aria-label = "none"></label>	
 				</form>
 			</article>
-			<img src="./images/illustration-1.svg">
+			<img src="./images/illustration-1.svg" alt="first-pic">
 		</section>
 		<section style="margin-top: 4%;padding: 0;font-size: 0">
-			<img src="./images/bg-curve-desktop.svg" style="margin: 0;padding: 0;width: 100%; height:75px;position: relative;right: 0;">
+			<img src="./images/bg-curve-desktop.svg" style="margin: 0;padding: 0;width: 100%; height:75px;position: relative;right: 0;" alt="curve">
 		</section>
 		<section style="background-color:hsl(240, 75%, 98%);">
 			<article>
@@ -49,20 +49,19 @@
 				<p>Securely share files and folders with friends, family and colleagues for 
 				live collaboration. No email attachments required!</p>
 				<a href="" style="color: hsl(170, 45%, 43%);text-decoration: none;padding-bottom:3px;border-bottom: solid 2px hsl(170, 45%, 43%);:hover{color:black;}">See how Fylo works
-					<img src="./images/icon-arrow.svg" style="width: 25px;vertical-align: middle;">
+					<img src="./images/icon-arrow.svg" style="width: 25px;vertical-align: middle;" alt="arrow">
 				</a>
 
 				<blockquote>
-					<img src="./images/icon-quotes.svg" style="width: 0.9em">
-					<p>
-						Fylo has improved our team productivity by an order of magnitude. Since 
+					<img src="./images/icon-quotes.svg" style="width: 0.9em" alt="curve">
+					<p>Fylo has improved our team productivity by an order of magnitude. Since 
 					making the switch our team has become a well-oiled collaboration machine.</p>
 					<img src="./images/avatar-testimonial.jpg" style="border-radius: 50%;height: 43px;">
 					<div style="display: inline-block;margin-left: 3px;font-size: 0.75em"><h3 style="margin: 0;font-size: 1.33em">Kyle Burton</h3>
 					Founder &amp; CEO, Huddle</div>
 				</blockquote>	
 			</article>
-			<img src="./images/illustration-2.svg">
+			<img src="./images/illustration-2.svg" alt="second-img">
 		</section>	
 	</main>		
 	<footer id="Footer">
@@ -74,13 +73,13 @@
 					If you have any questions, our support team would be happy to help you.
 				</p>
 			</article>
-			<form name="Form2" action="success.html" onsubmit="return validateForm('Form2')" method="post">
+			<form name="Form2" action="success.html" onsubmit="return validateForm('Form2')" method="post" aria-label = "undefined">
 				<input type="text" name="Email" class="email" value="Your email address ...">
-				<label class = "error"></label>	
-				<input type="submit" name="Submit" class="submit" value="Get Started for free">	
+				<label for="Email" class = "error"></label>	
+				<input type="submit" name="Submit" class="submit" value="Get Started for free" aria-label = "undefined">	
 			</form>
 		</section>
-		<article><img src="./images/logo_white.svg" style="height: 50px;color: white"></article>
+		<article><img src="./images/logo_white.svg" style="height: 50px;color: white" alt="logo_white"></article>
 		<nav>
 			<ul style="list-style-position: inside;">
 				<li style="list-style-image: url('./images/icon-phone.svg');padding-left: 5px;"><a href="tel:+1-543-123-4567">Phone: +1-543-123-4567</li>
