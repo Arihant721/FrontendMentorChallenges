@@ -15,7 +15,7 @@ h1,h2,h3,h4,h5,h6{
 #Header,main>section{
 	margin: 0;padding: 65px;
 	align-content: center;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	width: 100%;
 	position: relative;
@@ -38,7 +38,7 @@ h1,h2,h3,h4,h5,h6{
 #Footer>section{
 	margin: 0;
 	align-content: center;
-	justify-content: center;
+	justify-content: space-between;
 	width: 100%;
 	position: relative;
 	display: flex;
@@ -48,12 +48,15 @@ h1,h2,h3,h4,h5,h6{
 	align-items: normal;
 }
 article, section>img{
-	width: 50%;
+	width: 47.5%;
 }
 form>*{
     width: 100%;
 }
-
+#Footer ul a{
+    text-decoration: none;
+    color: white;
+}
 #Footer>nav{
 	display: flex;
 	justify-content: space-between;
@@ -66,7 +69,9 @@ form>*{
     width: 100%;
     padding-bottom: 0!important;
 }
-
+#Footer a:hover{
+    text-shadow: 0 0 12px white;
+}
 #Footer>nav>ul{
 	list-style-type: none;
 	color: white;
@@ -88,7 +93,7 @@ form>*{
 
 .email,.submit{
     padding: 10px 20px;
-    border-radius: 2px;
+    border-radius: 5px;
     transition: box-shadow 0.5s;
     outline: none;
     width: 100%;
@@ -126,6 +131,7 @@ blockquote{
 }
 .panel{
 	display: flex;
+    margin-block-start: 1em;margin-block-end: 1em;
 }
 .panel a{
 	height: 40px;
@@ -145,7 +151,7 @@ blockquote{
 	color: hsl(223, 87%, 63%);
 	border-color: hsl(223, 87%, 63%);
 }
-#Footer li{
+#Footer li,.panel{
     margin: 8px 0;
 }
 
@@ -160,13 +166,10 @@ blockquote{
     	width: 70%;
     }
     form[name = "Form1"]>.submit{
-    	width: 24%;
+    	width: 25%;float: right;
     }
-    form[name = "Form2"]{
-		width: 60%;padding: 0 5%;
-	}
-	#Footer>article{
-		width: 40%;
+	#Footer>article,form[name = "Form2"]{
+		width: 47.5%;
 	}
 	#Header>img{
 		width: 10em;
